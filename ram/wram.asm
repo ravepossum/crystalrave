@@ -2943,7 +2943,7 @@ wPlayerMonSelection:: ds 3
 	ds 2
 
 wStepCount:: db
-	ds 1
+wWildBattlePanic:: db
 
 wHappinessStepCount:: db
 
