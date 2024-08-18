@@ -2,7 +2,26 @@ PlaceMenuItemName:
 	push de
 	ld a, [wMenuSelection]
 	jr _PlaceSimpleMenuQuantity
-	
+
+PlaceMartMenuItemName:
+	push de
+	ld a, [wMenuSelection]
+	ld [wNamedObjectIndex], a
+	call GetItemName
+	cphl16 FIRST_TMHM_ITEM
+	jr c, .place_string
+	ld hl, wStringBuffer1
+	ld de, wStringBuffer4
+	ld bc, STRING_BUFFER_LENGTH
+	call CopyBytes
+	ld de, wStringBuffer4 + STRLEN("TM##")
+	farcall AppendTMHMMoveName
+	ld de, wStringBuffer4
+.place_string:
+	pop hl
+	call PlaceString
+	ret
+
 PlaceMenuItemQuantity:
 	push de
 	ld a, [wMenuSelection]
