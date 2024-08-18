@@ -778,3 +778,6 @@ INCBIN "gfx/pokemon/unown_r/back.2bpp.lz"
 SECTION "Pics 20", ROMX
 
 KrisTrainerPic: INCBIN "gfx/trainers/kris.2bpp.lz"
+
+HonchkrowFrontpic: INCBIN "gfx/pokemon/honchkrow/front.animated.2bpp.lz"
+HonchkrowBackpic:  INCBIN "gfx/pokemon/honchkrow/back.2bpp.lz"
