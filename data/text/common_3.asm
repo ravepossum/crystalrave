@@ -1151,3 +1151,13 @@ _MomLostGearBookletText::
 	para "Come back again in"
 	line "a while."
 	prompt
+
+_ExpShareToggleOn::
+	text "The EXP.SHARE was"
+	line "turned on."
+	prompt
+
+_ExpShareToggleOff::
+	text "The EXP.SHARE was"
+	line "turned off."
+	prompt

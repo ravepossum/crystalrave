@@ -78,7 +78,6 @@ ItemEffects1:
 	dw XItemEffect         ; X_SPEED
 	dw XItemEffect         ; X_SPECIAL
 	dw PokeFluteEffect     ; POKE_FLUTE
-	dw NoEffect            ; EXP_SHARE
 	dw NoEffect            ; SILVER_LEAF
 	dw RestorePPEffect     ; PP_UP
 	dw RestorePPEffect     ; ETHER
@@ -213,6 +212,7 @@ ItemEffectsKeyItems:
 	dw NoEffect           ; PASS
 	dw SquirtbottleEffect ; SQUIRTBOTTLE
 	dw NoEffect           ; RAINBOW_WING
+	dw ExpShareEffect     ; EXP_SHARE
 .IndirectEnd:
 
 ItemEffectsBalls:
@@ -2994,3 +2994,22 @@ GetMthMoveOfCurrentMon:
 	ld b, 0
 	add hl, bc
 	ret
+
+ExpShareEffect:
+	ld a, [wExpShareToggle]
+	xor 1
+	ld [wExpShareToggle], a
+	and a
+	ld hl, ExpShareToggleOn
+	jp nz, PrintText
+
+	ld hl, ExpShareToggleOff
+	jp PrintText
+
+ExpShareToggleOff:
+	text_far _ExpShareToggleOff
+	text_end
+
+ExpShareToggleOn:
+	text_far _ExpShareToggleOn
+	text_end
