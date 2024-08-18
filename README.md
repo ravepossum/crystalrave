@@ -1,3 +1,9 @@
+# CrystalRave
+
+This is just me messing around with the CrystalShireEngine and learning how to work with pokecrystal and pokecrystal16.
+
+Original README below.
+
 # CrystalShireEngine (CSE)
 
 CrystalShireEngine (CSE) is an enhanced engine for Pokemon Crystal romhacking.
