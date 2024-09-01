@@ -20,6 +20,7 @@ Sprites by:
 - Reusable TMs
 - Prompt to reuse repels
 - Autoprompts to speed up battles
+- Simplified clock reset
 
 # CrystalShireEngine (CSE)
 
