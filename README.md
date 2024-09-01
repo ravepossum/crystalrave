@@ -18,6 +18,7 @@ Sprites by:
 - TM names in menus and marts
 - Move reminder
 - Reusable TMs
+- Prompt to reuse repels
 
 # CrystalShireEngine (CSE)
 
