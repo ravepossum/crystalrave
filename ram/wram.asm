@@ -2942,7 +2942,8 @@ wKenjiBreakTimer:: ds 2 ; Kenji
 wYanmaMapGroup:: db
 wYanmaMapNumber:: db
 wPlayerMonSelection:: ds 3
-	ds 2
+	ds 1
+wRepelType:: db
 
 wStepCount:: db
 wWildBattlePanic:: db
