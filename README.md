@@ -8,6 +8,15 @@ Sprites by:
 - Nuuk - Honchrow
 - utytft - Kleavor
 
+# Features I've implemented (mostly just for my reference)
+
+- Physical/Special Split
+- Gen 6 Exp. Share
+- Remove OW poison damage
+- Catch experience
+- Improved whiteout calculations
+- TM names in menus and marts
+
 # CrystalShireEngine (CSE)
 
 CrystalShireEngine (CSE) is an enhanced engine for Pokemon Crystal romhacking.
