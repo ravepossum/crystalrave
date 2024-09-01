@@ -19,6 +19,7 @@ Sprites by:
 - Move reminder
 - Reusable TMs
 - Prompt to reuse repels
+- Autoprompts to speed up battles
 
 # CrystalShireEngine (CSE)
 
