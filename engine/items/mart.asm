@@ -414,7 +414,8 @@ LoadBuyMenuText:
 
 MartAskPurchaseQuantity:
 	ld a, [wCurItem]
-	cp TM01
+	call GetItemIndexFromID
+	cphl16 FIRST_TMHM_ITEM
 	jr nc, .PurchaseQuantityOfTM
 	call GetMartDialogGroup ; gets a pointer from GetMartDialogGroup.MartTextFunctionPointers
 	inc hl
