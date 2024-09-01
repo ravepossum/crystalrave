@@ -2,6 +2,9 @@
 
 This is just me messing around with the CrystalShireEngine and learning how to work with pokecrystal and pokecrystal16.
 
+New sprite credits:
+Nuuk
+
 Original README below.
 
 Sprites by:
