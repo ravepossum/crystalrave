@@ -10,10 +10,7 @@ Marts:
 	dw MartGoldenrod2F2
 	dw MartGoldenrod3F
 	dw MartGoldenrod4F
-	dw MartGoldenrod5F1
-	dw MartGoldenrod5F2
-	dw MartGoldenrod5F3
-	dw MartGoldenrod5F4
+	dw MartGoldenrod5F
 	dw MartOlivine
 	dw MartEcruteak
 	dw MartMahogany1
@@ -124,33 +121,11 @@ MartGoldenrod4F:
 	dw CALCIUM
 	dw HP_UP
 
-MartGoldenrod5F1:
+MartGoldenrod5F:
 	db 3 ; # items
 	dw TM_THUNDERPUNCH
 	dw TM_FIRE_PUNCH
 	dw TM_ICE_PUNCH
-
-MartGoldenrod5F2:
-	db 4 ; # items
-	dw TM_THUNDERPUNCH
-	dw TM_FIRE_PUNCH
-	dw TM_ICE_PUNCH
-	dw TM_HEADBUTT
-
-MartGoldenrod5F3:
-	db 4 ; # items
-	dw TM_THUNDERPUNCH
-	dw TM_FIRE_PUNCH
-	dw TM_ICE_PUNCH
-	dw TM_ROCK_SMASH
-
-MartGoldenrod5F4:
-	db 5 ; # items
-	dw TM_THUNDERPUNCH
-	dw TM_FIRE_PUNCH
-	dw TM_ICE_PUNCH
-	dw TM_HEADBUTT
-	dw TM_ROCK_SMASH
 
 MartOlivine:
 	db 9 ; # items
@@ -289,11 +264,11 @@ MartCeladon2F2:
 
 MartCeladon3F:
 	db 5 ; # items
-	dw TM_HIDDEN_POWER
-	dw TM_SUNNY_DAY
+	dw TM_PSYCH_UP
 	dw TM_PROTECT
-	dw TM_RAIN_DANCE
-	dw TM_SANDSTORM
+	dw TM_THUNDERPUNCH
+	dw TM_FIRE_PUNCH
+	dw TM_ICE_PUNCH
 
 MartCeladon4F:
 	db 3 ; # items
