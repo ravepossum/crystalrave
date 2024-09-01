@@ -20,13 +20,10 @@ TimeCapsule_CatchRateItems:
 	dbw 180, BRICK_PIECE
 	dbw 190, BERRY
 	dbw 195, BERRY
-	dbw 200, TM_PSYCH_UP
+	dbw 200, BERRY
 	dbw 220, BERRY
-	dbw 225, TM_ICE_PUNCH
-	dbw 235, TM_DETECT
+	dbw 225, BERRY
+	dbw 235, BERRY
 	dbw 250, BERRY
-	dbw TM_PSYCH_UP, BERRY
-	dbw TM_ICE_PUNCH, BERRY
-	dbw TM_DETECT, BERRY
 	dbw 255, BERRY
 	db 0 ; end
