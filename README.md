@@ -17,6 +17,7 @@ Sprites by:
 - Improved whiteout calculations
 - TM names in menus and marts
 - Move reminder
+- Reusable TMs
 
 # CrystalShireEngine (CSE)
 
