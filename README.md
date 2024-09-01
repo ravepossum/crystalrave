@@ -16,6 +16,7 @@ Sprites by:
 - Catch experience
 - Improved whiteout calculations
 - TM names in menus and marts
+- Move reminder
 
 # CrystalShireEngine (CSE)
 
