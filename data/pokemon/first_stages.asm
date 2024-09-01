@@ -253,4 +253,5 @@ FirstEvoStages::
 	dw HO_OH
 	dw CELEBI
 	dw MURKROW ; HONCHKROW
+	dw SCYTHER ; KLEAVOR
 	assert_table_length NUM_POKEMON

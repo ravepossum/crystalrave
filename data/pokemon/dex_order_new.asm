@@ -113,6 +113,7 @@ NewPokedexOrder:
 	dw VENOMOTH
 	dw SCYTHER
 	dw SCIZOR
+	dw KLEAVOR
 	dw PINSIR
 	dw HERACROSS
 	dw KOFFING

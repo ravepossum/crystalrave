@@ -102,6 +102,7 @@ EvosAttacksPointers2::
 	dw HoOhEvosAttacks
 	dw CelebiEvosAttacks
 	dw HonchkrowEvosAttacks
+	dw KleavorEvosAttacks
 .IndirectEnd::
 
 ChikoritaEvosAttacks:
@@ -1413,6 +1414,20 @@ HonchkrowEvosAttacks:
 	dbw 26, NIGHT_SHADE
 	dbw 31, FAINT_ATTACK
 	dbw 41, MEAN_LOOK
+	db 0 ; no more level-up moves
+
+KleavorEvosAttacks:
+	db 0 ; no more evolutions
+	dbw 1, QUICK_ATTACK
+	dbw 1, LEER
+	dbw 6, FOCUS_ENERGY
+	dbw 12, PURSUIT
+	dbw 18, FALSE_SWIPE
+	dbw 24, AGILITY
+	dbw 30, METAL_CLAW
+	dbw 36, SLASH
+	dbw 42, SWORDS_DANCE
+	dbw 48, DOUBLE_TEAM
 	db 0 ; no more level-up moves
 
 ENDSECTION

@@ -257,4 +257,5 @@ IconPointers:
 	dw HoOhIcon
 	dw CelebiIcon
 	dw HonchkrowIcon ; honchkrow
+	dw KleavorIcon ; kleavor
 	assert_table_length NUM_POKEMON + 1

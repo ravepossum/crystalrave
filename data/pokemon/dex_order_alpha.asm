@@ -107,6 +107,7 @@ AlphabeticalPokedexOrder:
 	dw KANGASKHAN
 	dw KINGDRA
 	dw KINGLER
+	dw KLEAVOR
 	dw KOFFING
 	dw KRABBY
 	dw LANTURN

@@ -781,3 +781,5 @@ KrisTrainerPic: INCBIN "gfx/trainers/kris.2bpp.lz"
 
 HonchkrowFrontpic: INCBIN "gfx/pokemon/honchkrow/front.animated.2bpp.lz"
 HonchkrowBackpic:  INCBIN "gfx/pokemon/honchkrow/back.2bpp.lz"
+KleavorFrontpic: INCBIN "gfx/pokemon/kleavor/front.animated.2bpp.lz"
+KleavorBackpic:  INCBIN "gfx/pokemon/kleavor/back.2bpp.lz"

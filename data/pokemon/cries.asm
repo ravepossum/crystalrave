@@ -258,4 +258,5 @@ PokemonCries::
 	mon_cry CRY_AIPOM,         0,  384 ; HO_OH
 	mon_cry CRY_ENTEI,       330,  273 ; CELEBI
 	mon_cry CRY_MARILL,      -150,  450 ; HONCHKROW
+	mon_cry CRY_AMPHAROS,    -100,  252 ; KLEAVOR
 	assert_table_length NUM_POKEMON

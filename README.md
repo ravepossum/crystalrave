@@ -4,6 +4,10 @@ This is just me messing around with the CrystalShireEngine and learning how to w
 
 Original README below.
 
+Sprites by:
+- Nuuk - Honchrow
+- utytft - Kleavor
+
 # CrystalShireEngine (CSE)
 
 CrystalShireEngine (CSE) is an enhanced engine for Pokemon Crystal romhacking.

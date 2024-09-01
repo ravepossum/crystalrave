@@ -262,4 +262,5 @@ MonMenuIconPals:
 	icon_pals RED,    BROWN  ; HO_OH
 	icon_pals GREEN,  PINK   ; CELEBI
 	icon_pals BLUE,   PURPLE ; HONCHKROW
+	icon_pals BROWN,  GRAY   ; KLEAVOR
 	assert_table_length NUM_POKEMON
