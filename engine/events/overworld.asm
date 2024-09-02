@@ -107,6 +107,115 @@ CheckPartyMove:
 	scf
 	ret
 
+CheckPartyCanLearnMove:
+	ld e, 0
+	xor a
+	ld [wCurPartyMon], a
+.loop
+	ld c, e
+	ld b, 0
+	ld hl, wPartySpecies
+	add hl, bc
+	ld a, [hl]
+	and a
+	jr z, .no
+	cp -1
+	jr z, .no
+	cp EGG
+	jr z, .next
+
+	ld [wCurPartySpecies], a
+	ld a, d
+; Check the TM/HM/Move Tutor list
+	ld [wPutativeTMHMMove], a
+	push de
+	predef CanLearnTMHMMove
+	pop de
+.check
+	ld a, c
+	and a
+	jr nz, .yes
+; Check the Pokemon's Level-Up Learnset
+	ld b, b
+	ld a, d
+	push de
+	call OW_CheckLvlUpMoves
+	pop de
+	jr nc, .yes
+; done checking
+
+.next
+	inc e
+	jr .loop
+
+.yes
+	ld a, e
+	; which mon can learn the move
+	ld [wCurPartyMon], a
+	xor a
+	ret
+.no
+	ld a, 1
+	ret
+
+OW_CheckLvlUpMoves:
+; move looking for in a
+	ld d, a
+	ld a, [wCurPartySpecies]
+	dec a
+	ld b, 0
+	ld c, a
+	ld hl, EvosAttacksPointers
+	add hl, bc
+	add hl, bc
+	ld a, BANK(EvosAttacksPointers)
+	call LoadDoubleIndirectPointer
+	ldh [hTemp], a
+	ld b, a
+	call GetFarWord
+	ld a, b
+	call GetFarByte
+	inc hl
+	and a
+	jr z, .find_move ; no evolutions
+	dec hl ; does have evolution(s)
+	call OW_SkipEvolutions
+.find_move
+	call OW_GetNextEvoAttackByte
+	and a
+	jr z, .notfound ; end of mon's lvl up learnset
+	call OW_GetNextEvoAttackByte
+	cp d
+	jr z, .found
+	jr .find_move
+.found
+	xor a
+	ret ; move is in lvl up learnset
+.notfound
+	scf ; move isn't in lvl up learnset
+	ret
+
+OW_SkipEvolutions:
+; Receives a pointer to the evos and attacks, and skips to the attacks.
+	ld a, b
+	call GetFarByte
+	inc hl
+	and a
+	ret z
+	cp EVOLVE_STAT
+	jr nz, .no_extra_skip
+	inc hl
+.no_extra_skip
+	inc hl
+	inc hl
+	jr OW_SkipEvolutions
+
+OW_GetNextEvoAttackByte:
+	ld a, [hTemp] ; EvosAttacksPointers bank
+	call GetFarByte
+	inc hl
+	ret
+
 FieldMoveFailed:
 	ld hl, .CantUseItemText
 	jmp MenuTextboxBackup
@@ -498,14 +607,33 @@ TrySurfOW::
 	call CheckDirection
 	jr c, .quit
 
+; Step 1 - badge check
 	ld de, ENGINE_FOGBADGE
 	call CheckEngineFlag
 	jr c, .quit
 
+; Step 2 - item check
+	ld hl, HM_SURF
+	call GetItemIDFromIndex
+	ld [wCurItem], a
+	ld hl, wNumItems
+	call CheckItem
+	jr z, .quit
+
+; Step 3 - learnset check
+  	ld hl, SURF
+	call GetMoveIDFromIndex
+	ld d, a
+	call CheckPartyCanLearnMove
+	and a
+	jr z, .yes
+
+; Step 4 - moveset check
 	ld hl, SURF
 	call CheckPartyMoveIndex
 	jr c, .quit
 
+.yes
 	ld hl, wBikeFlags
 	bit BIKEFLAGS_ALWAYS_ON_BIKE_F, [hl]
 	jr nz, .quit
@@ -699,12 +827,33 @@ Script_UsedWaterfall:
 	text_end
 
 TryWaterfallOW::
-	ld hl, WATERFALL
-	call CheckPartyMoveIndex
-	jr c, .failed
+; Step 1 - badge check
 	ld de, ENGINE_RISINGBADGE
 	call CheckEngineFlag
 	jr c, .failed
+
+; Step 2 - item check
+	ld hl, HM_WATERFALL
+	call GetItemIDFromIndex
+	ld [wCurItem], a
+	ld hl, wNumItems
+	call CheckItem
+	jr z, .failed
+
+; Step 3 - learnset check
+	ld hl, WATERFALL
+	call GetMoveIDFromIndex
+	ld d, a
+	call CheckPartyCanLearnMove
+	and a
+	jr z, .yes
+
+; Step 4 - moveset check
+	ld hl, WATERFALL
+	call CheckPartyMoveIndex
+	jr c, .failed
+
+.yes
 	call CheckMapCanWaterfall
 	jr c, .failed
 	ld a, BANK(Script_AskWaterfall)
@@ -1040,14 +1189,33 @@ BouldersMayMoveText:
 	text_end
 
 TryStrengthOW:
-	ld hl, STRENGTH
-	call CheckPartyMoveIndex
-	jr c, .nope
-
+; Step 1 - badge check
 	ld de, ENGINE_PLAINBADGE
 	call CheckEngineFlag
 	jr c, .nope
 
+; Step 2 - item check
+	ld hl, HM_STRENGTH
+	call GetItemIDFromIndex
+	ld [wCurItem], a
+	ld hl, wNumItems
+	call CheckItem
+	jr z, .nope
+
+; Step 3 - learnset check
+	ld hl, STRENGTH
+	call GetMoveIDFromIndex
+	ld d, a
+	call CheckPartyCanLearnMove
+	and a
+	jr z, .yes
+
+; Step 4 - moveset check
+	ld hl, STRENGTH
+	call CheckPartyMoveIndex
+	jr c, .nope
+
+.yes
 	ld hl, wBikeFlags
 	bit BIKEFLAGS_STRENGTH_ACTIVE_F, [hl]
 	jr z, .already_using
@@ -1171,12 +1339,33 @@ DisappearWhirlpool:
 	jmp GetMovementPermissions
 
 TryWhirlpoolOW::
-	ld hl, WHIRLPOOL
-	call CheckPartyMoveIndex
-	jr c, .failed
+; Step 1 - badge check
 	ld de, ENGINE_GLACIERBADGE
 	call CheckEngineFlag
 	jr c, .failed
+
+; Step 2 - item check
+	ld hl, HM_WHIRLPOOL
+	call GetItemIDFromIndex
+	ld [wCurItem], a
+	ld hl, wNumItems
+	call CheckItem
+	jr z, .failed
+
+; Step 3 - learnset check
+	ld hl, WHIRLPOOL
+	call GetMoveIDFromIndex
+	ld d, a
+	call CheckPartyCanLearnMove
+	and a
+	jr z, .yes
+
+; Step 4 - moveset check
+	ld hl, WHIRLPOOL
+	call CheckPartyMoveIndex
+	jr c, .failed
+
+.yes
 	call TryWhirlpoolMenu
 	jr c, .failed
 	ld a, BANK(Script_AskWhirlpoolOW)
@@ -1266,10 +1455,28 @@ HeadbuttScript:
 	end
 
 TryHeadbuttOW::
+; Step 1 - item check
+	ld hl, TM_HEADBUTT
+	call GetItemIDFromIndex
+	ld [wCurItem], a
+	ld hl, wNumItems
+	call CheckItem
+	jr z, .no
+
+; Step 2 - learnset check
+	ld hl, HEADBUTT
+	call GetMoveIDFromIndex
+	ld d, a
+	call CheckPartyCanLearnMove
+	and a
+	jr z, .can_use
+
+; Step 3 - moveset check
 	ld hl, HEADBUTT
 	call CheckPartyMoveIndex
 	jr c, .no
 
+.can_use
 	ld a, BANK(AskHeadbuttScript)
 	ld hl, AskHeadbuttScript
 	call CallScript
@@ -1390,11 +1597,36 @@ AskRockSmashText:
 	text_end
 
 HasRockSmash:
+; Step 1 - item check
+	ld hl, TM_ROCK_SMASH
+	call GetItemIDFromIndex
+	ld [wCurItem], a
+	ld hl, wNumItems
+	call CheckItem
+	jr z, .no
+
+; Step 2 - learnset check
+	ld hl, ROCK_SMASH
+	call GetMoveIDFromIndex
+	ld d, a
+	call CheckPartyCanLearnMove
+	and a
+	jr z, .yes
+
+; Step 3 - moveset check
 	ld hl, ROCK_SMASH
 	call CheckPartyMoveIndex
-	; a = carry ? TRUE : FALSE
-	sbc a
-	and TRUE
+	jr nc, .yes
+
+.no
+	ld a, 1
+	jr .done
+
+.yes
+	xor a
+	jr .done
+
+.done
 	ld [wScriptVar], a
 	ret
 
@@ -1728,14 +1960,33 @@ GotOffBikeText:
 	text_end
 
 TryCutOW::
-	ld hl, CUT
-	call CheckPartyMoveIndex
-	jr c, .cant_cut
-
+; Step 1 - badge check
 	ld de, ENGINE_HIVEBADGE
 	call CheckEngineFlag
 	jr c, .cant_cut
 
+; Step 2 - item check
+	ld hl, HM_CUT
+	call GetItemIDFromIndex
+	ld [wCurItem], a
+	ld hl, wNumItems
+	call CheckItem
+	jr z, .cant_cut
+
+; Step 3 - learnset check
+	ld hl, CUT
+	call GetMoveIDFromIndex
+	ld d, a
+	call CheckPartyCanLearnMove
+	and a
+	jr z, .yes
+
+; Step 4 - moveset check
+	ld hl, CUT
+	call CheckPartyMoveIndex
+	jr c, .cant_cut
+
+.yes
 	ld a, BANK(AskCutScript)
 	ld hl, AskCutScript
 	call CallScript
