@@ -22,6 +22,7 @@ Sprites by:
 - Autoprompts to speed up battles
 - Simplified clock reset
 - No exp. gain at level 100
+- Can use any field move if mon can learn it (still need to test Teleport, Softboiled, and Milkdrink)
 
 # CrystalShireEngine (CSE)
 
