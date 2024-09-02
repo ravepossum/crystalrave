@@ -293,6 +293,12 @@ PlayerEvents:
 	ret
 
 CheckTrainerEvent:
+if DEF(_DEBUG) ; ignore trainer sight when holding A+B
+	ld a, [wCurInput]
+	or ~(A_BUTTON | B_BUTTON)
+	inc a
+	jr z, .nope
+endc
 	call CheckTrainerBattle
 	jr nc, .nope
 
