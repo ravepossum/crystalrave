@@ -1128,6 +1128,12 @@ TryTileCollisionEvent::
 	ret
 
 RandomEncounter::
+if DEF(_DEBUG) ; ignore encounters when holding A+B
+	ld a, [wCurInput]
+	or ~(A_BUTTON | B_BUTTON)
+	inc a
+	jr z, .nope
+endc
 	call CheckWildEncounterCooldown
 	jr c, .nope
 	call CanEncounterWildMon
