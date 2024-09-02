@@ -114,6 +114,12 @@ _ExpPointsText::
 	text " EXP. Points!"
 	prompt
 
+_TeamGainedExpText::
+	text "The rest of the"
+	line "team gained EXP"
+	cont "with EXP SHARE!"
+	prompt
+
 _GoMonText::
 	text "Go! @"
 	text_end

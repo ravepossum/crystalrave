@@ -2136,12 +2136,17 @@ UpdateBattleStateAndExperienceAfterEnemyFaint:
 	; fallthrough
 ApplyExperienceAfterEnemyCaught:
 	; Preserve bits of non-fainted participants
+	xor a
+	ld[wExpShare], a
+	ld[wExpShareText], a
 	ld a, [wBattleParticipantsNotFainted]
 	ld d, a
 	push de
 	call GiveExperiencePoints
 	pop de
 	; If Exp. Share is ON, give 50% EXP to non-participants
+	ld a, 1
+	ld[wExpShare], a
 	ld a, [wExpShareToggle]
 	and a
 	ret z
@@ -6918,6 +6923,15 @@ GiveExperiencePoints:
 	ld b, a
 	jr .ev_loop
 .evs_done
+; No Experience at level 100
+	pop bc
+	ld hl, MON_LEVEL
+	add hl, bc
+	ld a, [hl]
+	cp MAX_LEVEL
+	jp nc, .next_mon
+	push bc
+; Experience
 	xor a
 	ldh [hMultiplicand + 0], a
 	ldh [hMultiplicand + 1], a
@@ -6968,8 +6982,22 @@ GiveExperiencePoints:
 	ld a, [wCurPartyMon]
 	ld hl, wPartyMonNicknames
 	call GetNickname
-	ld hl, Text_MonGainedExpPoint
+; Show text only once for the rest of the mons
+	ld a, [wExpShare]
+	and a
+	jr nz, .exp_share_on
+	ld hl, Text_MonGainedExpPoint	
+	jr .show_text
+.exp_share_on
+	ld a, [wExpShareText]
+	and a
+	jr nz, .after_text
+	inc a
+	ld [wExpShareText], a
+	ld hl, Text_TeamGainedExpPoint
+.show_text
 	call BattleTextbox
+.after_text
 	ld a, [wStringBuffer2 + 1]
 	ldh [hQuotient + 3], a
 	ld a, [wStringBuffer2]
@@ -7255,6 +7283,15 @@ BoostedExpPointsText:
 
 ExpPointsText:
 	text_far _ExpPointsText
+	text_end
+
+Text_TeamGainedExpPoint:
+	text_asm
+	ld hl, TeamGainedExpPointText
+	ret
+
+TeamGainedExpPointText:
+	text_far _TeamGainedExpText
 	text_end
 
 AnimateExpBar:
