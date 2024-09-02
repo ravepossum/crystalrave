@@ -21,6 +21,7 @@ Sprites by:
 - Prompt to reuse repels
 - Autoprompts to speed up battles
 - Simplified clock reset
+- No exp. gain at level 100
 
 # CrystalShireEngine (CSE)
 
