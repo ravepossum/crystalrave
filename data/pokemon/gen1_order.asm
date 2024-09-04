@@ -253,6 +253,22 @@ Pokered_MonIndices:
 	db QWILFISH
 	db WOBBUFFET
 	db WOBBUFFET
-	db HONCHKROW
-	db KLEAVOR
+	db WOBBUFFET ; idk, fuck it, we wobbuffets now
+	db WOBBUFFET ; idk, fuck it, we wobbuffets now
+	db WOBBUFFET ; idk, fuck it, we wobbuffets now
+	db WOBBUFFET ; idk, fuck it, we wobbuffets now
+	db WOBBUFFET ; idk, fuck it, we wobbuffets now
+	db WOBBUFFET ; idk, fuck it, we wobbuffets now
+	db WOBBUFFET ; idk, fuck it, we wobbuffets now
+	db WOBBUFFET ; idk, fuck it, we wobbuffets now
+	db WOBBUFFET ; idk, fuck it, we wobbuffets now
+	db WOBBUFFET ; idk, fuck it, we wobbuffets now
+	db WOBBUFFET ; idk, fuck it, we wobbuffets now
+	db WOBBUFFET ; idk, fuck it, we wobbuffets now
+	db WOBBUFFET ; idk, fuck it, we wobbuffets now
+	db WOBBUFFET ; idk, fuck it, we wobbuffets now
+	db WOBBUFFET ; idk, fuck it, we wobbuffets now
+	db WOBBUFFET ; idk, fuck it, we wobbuffets now
+	db WOBBUFFET ; idk, fuck it, we wobbuffets now
+	db WOBBUFFET ; idk, fuck it, we wobbuffets now
 	assert_table_length NUM_POKEMON + 1

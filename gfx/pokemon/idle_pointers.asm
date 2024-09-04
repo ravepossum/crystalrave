@@ -251,6 +251,22 @@ AnimationIdlePointers:
 	dw LugiaAnimationIdle
 	dw HoOhAnimationIdle
 	dw CelebiAnimationIdle
+	dw AzurillAnimationIdle
 	dw HonchkrowAnimationIdle
+	dw WeavileAnimationIdle
+	dw MagnezoneAnimationIdle
+	dw ElectivireAnimationIdle
+	dw MagmortarAnimationIdle
+	dw TogekissAnimationIdle
+	dw LeafeonAnimationIdle
+	dw GlaceonAnimationIdle
+	dw GliscorAnimationIdle
+	dw MamoswineAnimationIdle
+	dw PorygonZAnimationIdle
+	dw SylveonAnimationIdle
+	dw CursolaAnimationIdle
+	dw WyrdeerAnimationIdle
 	dw KleavorAnimationIdle
+	dw ClodsireAnimationIdle
+	dw FarigirafAnimationIdle
 	assert_table_length NUM_POKEMON

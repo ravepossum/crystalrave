@@ -256,6 +256,26 @@ TyranitarIcon::  INCBIN "gfx/icons/tyranitar.2bpp"
 LugiaIcon::      INCBIN "gfx/icons/lugia.2bpp"
 HoOhIcon::       INCBIN "gfx/icons/ho_oh.2bpp"
 CelebiIcon::     INCBIN "gfx/icons/celebi.2bpp"
-HonchkrowIcon::  INCBIN "gfx/icons/honchkrow.2bpp"
-KleavorIcon::    INCBIN "gfx/icons/kleavor.2bpp"
 EggIcon::        INCBIN "gfx/icons/egg.2bpp"
+
+
+SECTION "Mon Icons 3", ROMX
+
+AzurillIcon::    INCBIN "gfx/icons/azurill.2bpp" ;RAVETODO
+HonchkrowIcon::  INCBIN "gfx/icons/honchkrow.2bpp"
+WeavileIcon::    INCBIN "gfx/icons/weavile.2bpp" ;RAVETODO
+MagnezoneIcon::  INCBIN "gfx/icons/magnezone.2bpp" ;RAVETODO
+ElectivireIcon:: INCBIN "gfx/icons/electivire.2bpp" ;RAVETODO
+MagmortarIcon::  INCBIN "gfx/icons/magmortar.2bpp" ;RAVETODO
+TogekissIcon::   INCBIN "gfx/icons/togekiss.2bpp" ;RAVETODO
+LeafeonIcon::    INCBIN "gfx/icons/leafeon.2bpp" ;RAVETODO
+GlaceonIcon::    INCBIN "gfx/icons/glaceon.2bpp" ;RAVETODO
+GliscorIcon::    INCBIN "gfx/icons/gliscor.2bpp" ;RAVETODO
+MamoswineIcon::  INCBIN "gfx/icons/mamoswine.2bpp" ;RAVETODO
+PorygonZIcon::   INCBIN "gfx/icons/porygonz.2bpp" ;RAVETODO
+SylveonIcon::    INCBIN "gfx/icons/sylveon.2bpp" ;RAVETODO
+CursolaIcon::    INCBIN "gfx/icons/cursola.2bpp" ;RAVETODO
+WyrdeerIcon::    INCBIN "gfx/icons/wyrdeer.2bpp" ;RAVETODO
+KleavorIcon::    INCBIN "gfx/icons/kleavor.2bpp"
+ClodsireIcon::   INCBIN "gfx/icons/clodsire.2bpp" ;RAVETODO
+FarigirafIcon::  INCBIN "gfx/icons/farigiraf.2bpp" ;RAVETODO

@@ -492,7 +492,7 @@ endr
 	pop hl
 	ret
 
-GetIconBank:
+GetIconBank: ;RAVETODO fix this so it works with more than 2 banks, dba macro table?
 	push hl
 	ld a, [wCurIcon]
 	call GetPokemonIndexFromID

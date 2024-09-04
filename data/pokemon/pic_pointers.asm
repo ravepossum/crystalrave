@@ -518,8 +518,40 @@ PokemonPicPointers::
 	dba HoOhBackpic
 	dba CelebiFrontpic
 	dba CelebiBackpic
+	dba AzurillFrontpic
+	dba AzurillBackpic
 	dba HonchkrowFrontpic
 	dba HonchkrowBackpic
+	dba WeavileFrontpic
+	dba WeavileBackpic
+	dba MagnezoneFrontpic
+	dba MagnezoneBackpic
+	dba ElectivireFrontpic
+	dba ElectivireBackpic
+	dba MagmortarFrontpic
+	dba MagmortarBackpic
+	dba TogekissFrontpic
+	dba TogekissBackpic
+	dba LeafeonFrontpic
+	dba LeafeonBackpic
+	dba GlaceonFrontpic
+	dba GlaceonBackpic
+	dba GliscorFrontpic
+	dba GliscorBackpic
+	dba MamoswineFrontpic
+	dba MamoswineBackpic
+	dba PorygonZFrontpic
+	dba PorygonZBackpic
+	dba SylveonFrontpic
+	dba SylveonBackpic
+	dba CursolaFrontpic
+	dba CursolaBackpic
+	dba WyrdeerFrontpic
+	dba WyrdeerBackpic
 	dba KleavorFrontpic
 	dba KleavorBackpic
+	dba ClodsireFrontpic
+	dba ClodsireBackpic
+	dba FarigirafFrontpic
+	dba FarigirafBackpic
 	assert_table_length NUM_POKEMON + 1

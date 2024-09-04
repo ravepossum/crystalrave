@@ -1240,6 +1240,7 @@ MagnemiteEvosAttacks:
 	db 0 ; no more level-up moves
 
 MagnetonEvosAttacks:
+	dbbw EVOLVE_ITEM, THUNDERSTONE, MAGNEZONE ;RAVETODO
 	db 0 ; no more evolutions
 	dbw 1, TACKLE
 	dbw 1, THUNDERSHOCK
@@ -1807,7 +1808,7 @@ MrMimeEvosAttacks:
 
 ScytherEvosAttacks:
 	dbww EVOLVE_TRADE, METAL_COAT, SCIZOR
-	dbww EVOLVE_ITEM, KINGS_ROCK, KLEAVOR
+	dbww EVOLVE_ITEM, KINGS_ROCK, KLEAVOR ;RAVETODO
 	db 0 ; no more evolutions
 	dbw 1, QUICK_ATTACK
 	dbw 1, LEER
@@ -1838,6 +1839,7 @@ JynxEvosAttacks:
 	db 0 ; no more level-up moves
 
 ElectabuzzEvosAttacks:
+	dbww EVOLVE_ITEM, THUNDERSTONE, ELECTIVIRE ;RAVETODO
 	db 0 ; no more evolutions
 	dbw 1, QUICK_ATTACK
 	dbw 1, LEER
@@ -1851,6 +1853,7 @@ ElectabuzzEvosAttacks:
 	db 0 ; no more level-up moves
 
 MagmarEvosAttacks:
+	dbww EVOLVE_ITEM, FIRE_STONE, MAGMORTAR ;RAVETODO
 	db 0 ; no more evolutions
 	dbw 1, EMBER
 	dbw 1, LEER
@@ -1937,6 +1940,9 @@ EeveeEvosAttacks:
 	dbww EVOLVE_ITEM, FIRE_STONE, FLAREON
 	dbbw EVOLVE_HAPPINESS, TR_MORNDAY, ESPEON
 	dbbw EVOLVE_HAPPINESS, TR_EVENITE, UMBREON
+	dbww EVOLVE_ITEM, LEAF_STONE, LEAFEON
+	dbww EVOLVE_ITEM, NEVERMELTICE, GLACEON ;RAVETODO
+	dbww EVOLVE_ITEM, POLKADOT_BOW, SYLVEON ;RAVETODO
 	db 0 ; no more evolutions
 	dbw 1, TACKLE
 	dbw 1, TAIL_WHIP

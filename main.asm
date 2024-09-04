@@ -238,8 +238,6 @@ INCLUDE "engine/link/init_list.asm"
 INCLUDE "engine/pokemon/experience.asm"
 INCLUDE "engine/pokemon/switchpartymons.asm"
 INCLUDE "engine/gfx/load_pics.asm"
-INCLUDE "data/pokemon/base_stats.asm"
-INCLUDE "data/pokemon/names.asm"
 
 
 SECTION "Crystal Phone Text", ROMX
@@ -499,6 +497,10 @@ SECTION "Title", ROMX
 
 INCLUDE "engine/movie/title.asm"
 
+SECTION "bank46", ROMX
+
+INCLUDE "data/pokemon/base_stats.asm"
+INCLUDE "data/pokemon/names.asm"
 
 SECTION "mobile45", ROMX
 

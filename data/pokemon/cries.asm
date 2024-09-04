@@ -257,6 +257,22 @@ PokemonCries::
 	mon_cry CRY_TYPHLOSION,    0,  256 ; LUGIA
 	mon_cry CRY_AIPOM,         0,  384 ; HO_OH
 	mon_cry CRY_ENTEI,       330,  273 ; CELEBI
-	mon_cry CRY_MARILL,      -150,  450 ; HONCHKROW
-	mon_cry CRY_AMPHAROS,    -100,  252 ; KLEAVOR
+	mon_cry CRY_MARILL,      375,   58 ; AZURILL
+	mon_cry CRY_MARILL,     -150,  450 ; HONCHKROW
+	mon_cry CRY_WOOPER,     -103,  275 ; WEAVILE
+	mon_cry CRY_METAPOD,    -132,  420 ; MAGNEZONE
+	mon_cry CRY_VOLTORB,       0,  520 ; ELECTIVIRE
+	mon_cry CRY_CHARMANDER, -100,  276 ; MAGMORTAR
+	mon_cry CRY_TOGETIC,     -32,  180 ; TOGEKISS
+	mon_cry CRY_VENONAT,       0,  100 ; LEAFEON
+	mon_cry CRY_VENONAT,     270,  483 ; GLACEON
+	mon_cry CRY_GLIGAR,     -475,  384 ; GLISCOR
+	mon_cry CRY_MAGCARGO,   -538,  384 ; MAMOSWINE
+	mon_cry CRY_GIRAFARIG,   330,  276 ; PORYGON_Z
+	mon_cry CRY_VENONAT,    2217,  483 ; SYLVEON
+	mon_cry CRY_MAGCARGO,    728,  520 ; CURSOLA
+	mon_cry CRY_AIPOM,      -452,  484 ; WYRDEER
+	mon_cry CRY_AMPHAROS,   -100,  252 ; KLEAVOR
+	mon_cry CRY_WOOPER,     -461,  576 ; CLODSIRE
+	mon_cry CRY_GIRAFARIG,  -100,  576 ; FARIGIRAF
 	assert_table_length NUM_POKEMON

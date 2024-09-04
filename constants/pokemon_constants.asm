@@ -272,8 +272,24 @@ DEF JOHTO_POKEMON EQU const_value
 	const LUGIA      ; f9
 	const HO_OH      ; fa
 	const CELEBI     ; fb
-	const HONCHKROW  ; fc
-	const KLEAVOR    ; fd
+	const AZURILL    ; fc
+	const HONCHKROW  ; fd
+	const WEAVILE    ; fe
+	const MAGNEZONE  ; ff
+	const ELECTIVIRE ; 100
+	const MAGMORTAR  ; 101
+	const TOGEKISS   ; 102
+	const LEAFEON    ; 103
+	const GLACEON    ; 104
+	const GLISCOR    ; 105
+	const MAMOSWINE  ; 106
+	const PORYGON_Z  ; 107
+	const SYLVEON    ; 108
+	const CURSOLA    ; 109
+	const WYRDEER    ; 10a
+	const KLEAVOR    ; 10b
+	const CLODSIRE   ; 10c
+	const FARIGIRAF  ; 10d
 DEF NUM_JOHTO_POKEMON EQU const_value - 1
 DEF NUM_POKEMON EQU const_value - 1
 

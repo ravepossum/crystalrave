@@ -183,8 +183,8 @@ FirstEvoStages::
 	dw MAREEP
 	dw MAREEP
 	dw ODDISH
-	dw MARILL
-	dw MARILL     ;b8
+	dw AZURILL
+	dw AZURILL    ;b8
 	dw SUDOWOODO
 	dw POLIWAG
 	dw HOPPIP
@@ -252,6 +252,22 @@ FirstEvoStages::
 	dw LUGIA
 	dw HO_OH
 	dw CELEBI
-	dw MURKROW ; HONCHKROW
-	dw SCYTHER ; KLEAVOR
+	dw AZURILL    ; AZURILL
+	dw MURKROW    ; HONCHKROW
+	dw SNEASEL    ; WEAVILE
+	dw MAGNEMITE  ; MAGNEZONE
+	dw ELEKID     ; ELECTIVIRE
+	dw MAGBY      ; MAGMORTAR
+	dw TOGEPI     ; TOGEKISS
+	dw EEVEE      ; LEAFEON
+	dw EEVEE      ; GLACEON
+	dw GLIGAR     ; GLISCOR
+	dw SWINUB     ; MAMOSWINE
+	dw PORYGON    ; PORYGON_Z
+	dw EEVEE      ; SYLVEON
+	dw CORSOLA    ; CURSOLA
+	dw STANTLER   ; WYRDEER
+	dw SCYTHER    ; KLEAVOR
+	dw WOOPER     ; CLODSIRE
+	dw GIRAFARIG  ; FARIGIRAF
 	assert_table_length NUM_POKEMON

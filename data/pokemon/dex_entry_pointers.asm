@@ -252,6 +252,22 @@ PokedexDataPointerTable:
 	dba LugiaPokedexEntry
 	dba HoOhPokedexEntry
 	dba CelebiPokedexEntry
+	dba AzurillPokedexEntry
 	dba HonchkrowPokedexEntry
+	dba WeavilePokedexEntry
+	dba MagnezonePokedexEntry
+	dba ElectivirePokedexEntry
+	dba MagmortarPokedexEntry
+	dba TogekissPokedexEntry
+	dba LeafeonPokedexEntry
+	dba GlaceonPokedexEntry
+	dba GliscorPokedexEntry
+	dba MamoswinePokedexEntry
+	dba PorygonZPokedexEntry
+	dba SylveonPokedexEntry
+	dba CursolaPokedexEntry
+	dba WyrdeerPokedexEntry
 	dba KleavorPokedexEntry
+	dba ClodsirePokedexEntry
+	dba FarigirafPokedexEntry
 	assert_table_length NUM_POKEMON

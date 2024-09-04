@@ -36,7 +36,6 @@ ROMX $01
 	"Tileset Data 10"
 ROMX $02
 	"bank2"
-	"Tileset Data 9"
 	"Battle Weather Images"
 ROMX $03
 	"bank3"
@@ -207,8 +206,10 @@ ROMX $44
 	"Mon Icons 2"
 ROMX $45
 	"mobile45"
+	"Tileset Data 9"
 ROMX $46
 	"mobile46"
+	"bank46"
 ROMX $47
 	"Battle Tower"
 ROMX $48
@@ -324,6 +325,8 @@ ROMX $7b
 ROMX $7c
 	"Battle Tower Trainer Data"
 ROMX $7d
+	"Mon Icons 3"
+	"Pics 21"
 ROMX $7e
 	"Crystal Events"
 ROMX $7f

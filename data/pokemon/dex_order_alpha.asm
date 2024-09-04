@@ -12,6 +12,7 @@ AlphabeticalPokedexOrder:
 	dw ARIADOS
 	dw ARTICUNO
 	dw AZUMARILL
+	dw AZURILL
 	dw BAYLEEF
 	dw BEEDRILL
 	dw BELLOSSOM
@@ -31,11 +32,13 @@ AlphabeticalPokedexOrder:
 	dw CLEFABLE
 	dw CLEFAIRY
 	dw CLEFFA
+	dw CLODSIRE
 	dw CLOYSTER
 	dw CORSOLA
 	dw CROBAT
 	dw CROCONAW
 	dw CUBONE
+	dw CURSOLA
 	dw CYNDAQUIL
 	dw DELIBIRD
 	dw DEWGONG
@@ -53,6 +56,7 @@ AlphabeticalPokedexOrder:
 	dw EEVEE
 	dw EKANS
 	dw ELECTABUZZ
+	dw ELECTIVIRE
 	dw ELECTRODE
 	dw ELEKID
 	dw ENTEI
@@ -60,6 +64,7 @@ AlphabeticalPokedexOrder:
 	dw EXEGGCUTE
 	dw EXEGGUTOR
 	dw FARFETCH_D
+	dw FARIGIRAF
 	dw FEAROW
 	dw FERALIGATR
 	dw FLAAFFY
@@ -70,7 +75,9 @@ AlphabeticalPokedexOrder:
 	dw GENGAR
 	dw GEODUDE
 	dw GIRAFARIG
+	dw GLACEON
 	dw GLIGAR
+	dw GLISCOR
 	dw GLOOM
 	dw GOLBAT
 	dw GOLDEEN
@@ -113,6 +120,7 @@ AlphabeticalPokedexOrder:
 	dw LANTURN
 	dw LAPRAS
 	dw LARVITAR
+	dw LEAFEON
 	dw LEDIAN
 	dw LEDYBA
 	dw LICKITUNG
@@ -124,8 +132,11 @@ AlphabeticalPokedexOrder:
 	dw MAGCARGO
 	dw MAGIKARP
 	dw MAGMAR
+	dw MAGMORTAR
 	dw MAGNEMITE
 	dw MAGNETON
+	dw MAGNEZONE
+	dw MAMOSWINE
 	dw MANKEY
 	dw MANTINE
 	dw MAREEP
@@ -174,6 +185,7 @@ AlphabeticalPokedexOrder:
 	dw POLIWRATH
 	dw PONYTA
 	dw PORYGON
+	dw PORYGON_Z
 	dw PORYGON2
 	dw PRIMEAPE
 	dw PSYDUCK
@@ -222,11 +234,13 @@ AlphabeticalPokedexOrder:
 	dw SUNFLORA
 	dw SUNKERN
 	dw SWINUB
+	dw SYLVEON
 	dw TANGELA
 	dw TAUROS
 	dw TEDDIURSA
 	dw TENTACOOL
 	dw TENTACRUEL
+	dw TOGEKISS
 	dw TOGEPI
 	dw TOGETIC
 	dw TOTODILE
@@ -245,12 +259,14 @@ AlphabeticalPokedexOrder:
 	dw VOLTORB
 	dw VULPIX
 	dw WARTORTLE
+	dw WEAVILE
 	dw WEEDLE
 	dw WEEPINBELL
 	dw WEEZING
 	dw WIGGLYTUFF
 	dw WOBBUFFET
 	dw WOOPER
+	dw WYRDEER
 	dw XATU
 	dw YANMA
 	dw ZAPDOS

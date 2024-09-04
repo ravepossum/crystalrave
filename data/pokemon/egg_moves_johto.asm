@@ -32,7 +32,7 @@ EggMovePointers2::
 	dw NoEggMoves2
 	dw NoEggMoves2
 	dw NoEggMoves2
-	dw MarillEggMoves
+	dw NoEggMoves2
 	dw NoEggMoves2
 	dw SudowoodoEggMoves
 	dw NoEggMoves2
@@ -101,8 +101,24 @@ EggMovePointers2::
 	dw NoEggMoves2
 	dw NoEggMoves2
 	dw NoEggMoves2
-	dw NoEggMoves2
-	dw NoEggMoves2
+	dw AzurillEggMoves
+	dw NoEggMoves2 ; HONCHKROW
+	dw NoEggMoves2 ; WEAVILE
+	dw NoEggMoves2 ; MAGNEZONE
+	dw NoEggMoves2 ; ELECTIVIRE
+	dw NoEggMoves2 ; MAGMORTAR
+	dw NoEggMoves2 ; TOGEKISS
+	dw NoEggMoves2 ; LEAFEON
+	dw NoEggMoves2 ; GLACEON
+	dw NoEggMoves2 ; GLISCOR
+	dw NoEggMoves2 ; MAMOSWINE
+	dw NoEggMoves2 ; PORYGON_Z
+	dw NoEggMoves2 ; SYLVEON
+	dw NoEggMoves2 ; CURSOLA
+	dw NoEggMoves2 ; WYRDEER
+	dw NoEggMoves2 ; KLEAVOR
+	dw NoEggMoves2 ; CLODSIRE
+	dw NoEggMoves2 ; FARIGIRAF
 .IndirectEnd::
 
 ChikoritaEggMoves:
@@ -217,7 +233,7 @@ MareepEggMoves:
 	dw REFLECT
 	dw -1 ; end
 
-MarillEggMoves:
+AzurillEggMoves:
 	dw LIGHT_SCREEN
 	dw PRESENT
 	dw AMNESIA

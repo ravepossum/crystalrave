@@ -49,6 +49,7 @@ NewPokedexOrder:
 	dw WIGGLYTUFF
 	dw TOGEPI
 	dw TOGETIC
+	dw TOGEKISS
 	dw SANDSHREW
 	dw SANDSLASH
 	dw EKANS
@@ -59,6 +60,7 @@ NewPokedexOrder:
 	dw AMPHAROS
 	dw WOOPER
 	dw QUAGSIRE
+	dw CLODSIRE
 	dw GASTLY
 	dw HAUNTER
 	dw GENGAR
@@ -122,6 +124,7 @@ NewPokedexOrder:
 	dw MUK
 	dw MAGNEMITE
 	dw MAGNETON
+	dw MAGNEZONE
 	dw VOLTORB
 	dw ELECTRODE
 	dw AIPOM
@@ -132,6 +135,8 @@ NewPokedexOrder:
 	dw GROWLITHE
 	dw ARCANINE
 	dw STANTLER
+	dw WYRDEER
+	dw AZURILL
 	dw MARILL
 	dw AZUMARILL
 	dw DIGLETT
@@ -150,14 +155,17 @@ NewPokedexOrder:
 	dw HITMONCHAN
 	dw HITMONTOP
 	dw GIRAFARIG
+	dw FARIGIRAF
 	dw TAUROS
 	dw MILTANK
 	dw MAGBY
 	dw MAGMAR
+	dw MAGMORTAR
 	dw SMOOCHUM
 	dw JYNX
 	dw ELEKID
 	dw ELECTABUZZ
+	dw ELECTIVIRE
 	dw MR__MIME
 	dw SMEARGLE
 	dw FARFETCH_D
@@ -174,6 +182,7 @@ NewPokedexOrder:
 	dw SHELLDER
 	dw CLOYSTER
 	dw CORSOLA
+	dw CURSOLA
 	dw REMORAID
 	dw OCTILLERY
 	dw CHINCHOU
@@ -188,13 +197,18 @@ NewPokedexOrder:
 	dw FLAREON
 	dw ESPEON
 	dw UMBREON
+	dw LEAFEON
+	dw GLACEON
+	dw SYLVEON
 	dw HORSEA
 	dw SEADRA
 	dw KINGDRA
 	dw GLIGAR
+	dw GLISCOR
 	dw DELIBIRD
 	dw SWINUB
 	dw PILOSWINE
+	dw MAMOSWINE
 	dw TEDDIURSA
 	dw URSARING
 	dw PHANPY
@@ -217,9 +231,11 @@ NewPokedexOrder:
 	dw SLUGMA
 	dw MAGCARGO
 	dw SNEASEL
+	dw WEAVILE
 	dw MISDREAVUS
 	dw PORYGON
 	dw PORYGON2
+	dw PORYGON_Z
 	dw CHANSEY
 	dw BLISSEY
 	dw LAPRAS

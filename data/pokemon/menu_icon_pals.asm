@@ -261,6 +261,22 @@ MonMenuIconPals:
 	icon_pals BLUE,   TEAL   ; LUGIA
 	icon_pals RED,    BROWN  ; HO_OH
 	icon_pals GREEN,  PINK   ; CELEBI
+	icon_pals BLUE,   GREEN  ; AZURILL
 	icon_pals BLUE,   PURPLE ; HONCHKROW
+	icon_pals RED,    PURPLE ; WEAVILE
+	icon_pals GRAY,   GRAY   ; MAGNEZONE
+	icon_pals BROWN,  GRAY   ; ELECTIVIRE
+	icon_pals RED,    PURPLE ; MAGMORTAR
+	icon_pals RED,    BLUE   ; TOGEKISS
+	icon_pals GREEN,  BROWN  ; LEAFEON
+	icon_pals BLUE,   TEAL   ; GLACEON
+	icon_pals PURPLE, GRAY   ; GLISCOR
+	icon_pals BROWN,  BROWN  ; MAMOSWINE
+	icon_pals BLUE,   BLUE   ; PORYGON_Z
+	icon_pals PINK,   BLUE   ; SYLVEON
+	icon_pals BLUE,   GRAY   ; CURSOLA
+	icon_pals BROWN,  GRAY   ; WYRDEER
 	icon_pals BROWN,  GRAY   ; KLEAVOR
+	icon_pals BROWN,  GRAY   ; CLODSIRE
+	icon_pals RED,    BLUE   ; FARIGIRAF
 	assert_table_length NUM_POKEMON
