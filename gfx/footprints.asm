@@ -252,23 +252,23 @@ INCBIN "gfx/footprints/tyranitar.1bpp"
 INCBIN "gfx/footprints/lugia.1bpp"
 INCBIN "gfx/footprints/ho_oh.1bpp"
 INCBIN "gfx/footprints/celebi.1bpp"
-INCBIN "gfx/footprints/azurill.1bpp" ;RAVETODO
+INCBIN "gfx/footprints/azurill.1bpp"
 INCBIN "gfx/footprints/honchkrow.1bpp"
-INCBIN "gfx/footprints/weavile.1bpp" ;RAVETODO
-INCBIN "gfx/footprints/magnezone.1bpp" ;RAVETODO
-INCBIN "gfx/footprints/electivire.1bpp" ;RAVETODO
-INCBIN "gfx/footprints/magmortar.1bpp" ;RAVETODO
-INCBIN "gfx/footprints/togekiss.1bpp" ;RAVETODO
-INCBIN "gfx/footprints/leafeon.1bpp" ;RAVETODO
-INCBIN "gfx/footprints/glaceon.1bpp" ;RAVETODO
-INCBIN "gfx/footprints/gliscor.1bpp" ;RAVETODO
-INCBIN "gfx/footprints/mamoswine.1bpp" ;RAVETODO
-INCBIN "gfx/footprints/porygonz.1bpp" ;RAVETODO
-INCBIN "gfx/footprints/sylveon.1bpp" ;RAVETODO
-INCBIN "gfx/footprints/cursola.1bpp" ;RAVETODO
-INCBIN "gfx/footprints/wyrdeer.1bpp" ;RAVETODO
+INCBIN "gfx/footprints/weavile.1bpp"
+INCBIN "gfx/footprints/magnezone.1bpp" ; shared with magneton
+INCBIN "gfx/footprints/electivire.1bpp"
+INCBIN "gfx/footprints/magmortar.1bpp"
+INCBIN "gfx/footprints/togekiss.1bpp"
+INCBIN "gfx/footprints/leafeon.1bpp" ; shared with flareon
+INCBIN "gfx/footprints/glaceon.1bpp" ; shared with vaporeon
+INCBIN "gfx/footprints/gliscor.1bpp"
+INCBIN "gfx/footprints/mamoswine.1bpp"
+INCBIN "gfx/footprints/porygonz.1bpp" ; shared with porygon2
+INCBIN "gfx/footprints/sylveon.1bpp"
+INCBIN "gfx/footprints/cursola.1bpp" ; shared with corsola
+INCBIN "gfx/footprints/wyrdeer.1bpp"
 INCBIN "gfx/footprints/kleavor.1bpp"
-INCBIN "gfx/footprints/clodsire.1bpp" ;RAVETODO
-INCBIN "gfx/footprints/farigiraf.1bpp" ;RAVETODO
+INCBIN "gfx/footprints/clodsire.1bpp"
+INCBIN "gfx/footprints/farigiraf.1bpp"
 
 	assert_table_length NUM_POKEMON
