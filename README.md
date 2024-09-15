@@ -4,9 +4,11 @@ This is just me messing around with the CrystalShireEngine and learning how to w
 
 Original README below.
 
-Sprites by:
+Front/Back Sprites by:
 - Nuuk - Azurill, Honchkrow, Weavile, Magnezone, Electivire, Magmortar, Togekiss, Leafeon, Glaceon, Gliscor, Mamoswine, PorygonZ, Sylveon, Cursola, Wyrdeer, Kleavor, Clodsire, Farigiraf
-- utytft - Kleavor
+- utytft - Kleavor (anim frames by me)
+
+Icon & Footprint sprites for all new mons from Polished Crystal (hoping to get more detailed credits here eventually).
 
 # Features I've implemented (mostly just for my reference)
 
