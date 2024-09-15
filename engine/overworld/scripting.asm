@@ -2454,4 +2454,4 @@ AppendTMHMMoveName::
 	ld [hl], " "
 	inc hl
 	ld de, wStringBuffer1
-	jp CopyName2
+	jmp CopyName2

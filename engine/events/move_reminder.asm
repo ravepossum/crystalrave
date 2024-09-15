@@ -79,25 +79,25 @@ MoveReminding:
 ; This ends the dialogue.
 .cancel
 	ld hl, MoveReminderCancelText
-	jp PrintText
+	jmp PrintText
 
 ; Loads and prints the "MoveReminderEggText" text.
 ; This ends the dialogue.
 .is_an_egg
 	ld hl, MoveReminderEggText
-	jp PrintText
+	jmp PrintText
 
 ; Loads and prints the "MoveReminderNotaMonText" text.
 ; This ends the dialogue.
 .not_a_pokemon
 	ld hl, MoveReminderNotaMonText
-	jp PrintText
+	jmp PrintText
 
 ; Loads and prints the "MoveReminderNoMovesText" text.
 ; This ends the dialogue.
 .no_moves_to_learn
 	ld hl, MoveReminderNoMovesText
-	jp PrintText
+	jmp PrintText
 
 ; Exits the menu and goes back to the map with a
 ; speech text box open and then loads and prints
@@ -106,7 +106,7 @@ MoveReminding:
 .move_learned
 	call ReturnToMapWithSpeechTextbox
 	ld hl, MoveReminderMoveLearnedText
-	jp PrintText
+	jmp PrintText
 
 ; Checks for moves that can be learned and returns
 ; a zero flag if there are none.
@@ -412,7 +412,7 @@ ChooseMoveToLearn:
 	ld [wNamedObjectIndex], a
 	call GetMoveName
 	pop hl
-	jp PlaceString
+	jmp PlaceString
 
 ; This prints the move's pp offset by one
 ; line with some spacing from the left.
@@ -541,7 +541,7 @@ ChooseMoveToLearn:
 	ld de, wBuffer1
 	lb bc, 1, 3
 	hlcoord 16, 12
-	jp PrintNum
+	jmp PrintNum
 
 ; This prints "---" if the move has an attack of "0".
 ; This means that the move does not initially cause
@@ -550,7 +550,7 @@ ChooseMoveToLearn:
 	hlcoord 16, 12
 	ld de, MoveNullValueString
 	ld bc, 3
-	jp PlaceString
+	jmp PlaceString
 
 ; This is a notch that will be placed on
 ; the top left of the description box.

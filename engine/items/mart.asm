@@ -432,7 +432,7 @@ MartAskPurchaseQuantity:
 	ld hl, wNumItems
 	call CheckItem
 	pop de
-	jp c, .AlreadyHaveTM
+	jr c, .AlreadyHaveTM
 	farcall GetItemPrice
 	ld a, d
 	ld [wBuySellItemPrice + 0], a

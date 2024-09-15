@@ -503,7 +503,7 @@ AutoParagraph::
 	call DelayFrames
 	hlcoord TEXTBOX_INNERX, TEXTBOX_INNERY
 	pop de
-	jp NextChar
+	jmp NextChar
 
 _ContText::
 	ld a, [wLinkMode]
@@ -536,7 +536,7 @@ _ContTextPauseShort::
 	ld c, 5
 	call DelayFrames
 	pop de
-	jp NextChar
+	jmp NextChar
 
 ContText::
 	push de

@@ -3016,10 +3016,10 @@ ExpShareEffect:
 	ld [wExpShareToggle], a
 	and a
 	ld hl, ExpShareToggleOn
-	jp nz, PrintText
+	jmp nz, PrintText
 
 	ld hl, ExpShareToggleOff
-	jp PrintText
+	jmp PrintText
 
 ExpShareToggleOff:
 	text_far _ExpShareToggleOff

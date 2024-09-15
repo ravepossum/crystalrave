@@ -6929,7 +6929,7 @@ GiveExperiencePoints:
 	add hl, bc
 	ld a, [hl]
 	cp MAX_LEVEL
-	jp nc, .next_mon
+	jmp nc, .next_mon
 	push bc
 ; Experience
 	xor a
