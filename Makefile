@@ -89,6 +89,8 @@ tidy:
 tools:
 	$(MAKE) -C tools/
 
+free_space: crystal
+	tools/free_space.awk BANK=all pokecrystal.map
 
 RGBASMFLAGS = -E -Q8 -P includes.asm -Weverything -Wnumeric-string=2 -Wtruncation=1
 
