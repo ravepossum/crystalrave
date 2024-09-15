@@ -5,7 +5,7 @@ This is just me messing around with the CrystalShireEngine and learning how to w
 Original README below.
 
 Sprites by:
-- Nuuk - Honchrow
+- Nuuk - Azurill, Honchkrow, Weavile, Magnezone, Electivire, Magmortar, Togekiss, Leafeon, Glaceon, Gliscor, Mamoswine, PorygonZ, Sylveon, Cursola, Wyrdeer, Kleavor, Clodsire, Farigiraf
 - utytft - Kleavor
 
 # Features I've implemented (mostly just for my reference)
