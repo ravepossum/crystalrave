@@ -2,13 +2,16 @@
 
 This is just me messing around with the CrystalShireEngine and learning how to work with pokecrystal and pokecrystal16.
 
-Original README below.
-
+# Credits
 Front/Back Sprites by:
 - Nuuk - Azurill, Honchkrow, Weavile, Magnezone, Electivire, Magmortar, Togekiss, Leafeon, Glaceon, Gliscor, Mamoswine, PorygonZ, Sylveon, Cursola, Wyrdeer, Kleavor, Clodsire, Farigiraf
 - utytft - Kleavor (anim frames by me)
 
 Icon & Footprint sprites for all new mons from Polished Crystal (hoping to get more detailed credits here eventually).
+
+Move animations:
+- SourApple/PolishedCrystal (Play Rough, Dazzlingleam, Draining Kiss, Moonblast)
+- Azure_Keys/Black & White 3: Genesis (Fairy Wind, Moonblast)
 
 # Features I've implemented (mostly just for my reference)
 
@@ -26,6 +29,8 @@ Icon & Footprint sprites for all new mons from Polished Crystal (hoping to get m
 - Simplified clock reset
 - No exp. gain at level 100
 - Can use any field move if mon can learn it (still need to test Teleport, Softboiled, and Milkdrink)
+
+Original CSE README below.
 
 # CrystalShireEngine (CSE)
 
