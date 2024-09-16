@@ -85,6 +85,11 @@ BattleAnimationsGen2::
 	dw BattleAnim_RockSmash
 	dw BattleAnim_Whirlpool
 	dw BattleAnim_BeatUp
+	dw BattleAnim_PlayRough
+	dw BattleAnim_FairyWind
+	dw BattleAnim_DrainingKiss
+	dw BattleAnim_Dazzlingleam
+	dw BattleAnim_Moonblast
 .IndirectEnd::
 
 BattleAnim_Sketch:
@@ -1768,4 +1773,19 @@ BattleAnimSub_Glimmer2:
 	anim_wait 5
 	anim_loop 2, .loop
 	anim_wait 16
+	anim_ret
+
+BattleAnim_PlayRough:
+	anim_ret
+
+BattleAnim_FairyWind:
+	anim_ret
+
+BattleAnim_DrainingKiss:
+	anim_ret
+
+BattleAnim_Dazzlingleam:
+	anim_ret
+
+BattleAnim_Moonblast:
 	anim_ret

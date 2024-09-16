@@ -251,4 +251,9 @@ MoveNames::
 	li "ROCK SMASH"
 	li "WHIRLPOOL"
 	li "BEAT UP"
+	li "PLAY ROUGH"
+	li "FAIRY WIND"
+	li "DRAININGKISS"
+	li "DAZZLINGLEAM"
+	li "MOONBLAST"
 	assert_list_length NUM_ATTACKS

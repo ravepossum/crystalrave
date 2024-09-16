@@ -290,6 +290,7 @@ HoothootEvosAttacks:
 	dbw 22, REFLECT
 	dbw 28, TAKE_DOWN
 	dbw 34, CONFUSION
+	dbw 41, MOONBLAST
 	dbw 48, DREAM_EATER
 	db 0 ; no more level-up moves
 
@@ -305,7 +306,8 @@ NoctowlEvosAttacks:
 	dbw 25, REFLECT
 	dbw 33, TAKE_DOWN
 	dbw 41, CONFUSION
-	dbw 57, DREAM_EATER
+	dbw 48, MOONBLAST	
+	dbw 55, DREAM_EATER
 	db 0 ; no more level-up moves
 
 LedybaEvosAttacks:
@@ -427,6 +429,7 @@ CleffaEvosAttacks:
 	dbw 1, CHARM
 	dbw 4, ENCORE
 	dbw 8, SING
+	dbw 12, FAIRY_WIND
 	dbw 13, SWEET_KISS
 	db 0 ; no more level-up moves
 
@@ -437,6 +440,7 @@ IgglybuffEvosAttacks:
 	dbw 1, CHARM
 	dbw 4, DEFENSE_CURL
 	dbw 9, POUND
+	dbw 12, FAIRY_WIND
 	dbw 14, SWEET_KISS
 	db 0 ; no more level-up moves
 
@@ -445,8 +449,9 @@ TogepiEvosAttacks:
 	db 0 ; no more evolutions
 	dbw 1, GROWL
 	dbw 1, CHARM
-	dbw 7, METRONOME
-	dbw 18, SWEET_KISS
+	dbw 5, METRONOME
+	dbw 9, SWEET_KISS
+	dbw 14, FAIRY_WIND
 	dbw 25, ENCORE
 	dbw 31, SAFEGUARD
 	dbw 38, DOUBLE_EDGE
@@ -457,8 +462,9 @@ TogeticEvosAttacks:
 	db 0 ; no more evolutions
 	dbw 1, GROWL
 	dbw 1, CHARM
-	dbw 7, METRONOME
-	dbw 18, SWEET_KISS
+	dbw 5, METRONOME
+	dbw 9, SWEET_KISS
+	dbw 14, FAIRY_WIND
 	dbw 25, ENCORE
 	dbw 31, SAFEGUARD
 	dbw 38, DOUBLE_EDGE
@@ -498,6 +504,7 @@ MareepEvosAttacks:
 	dbw 23, COTTON_SPORE
 	dbw 30, LIGHT_SCREEN
 	dbw 37, THUNDER
+	dbw 39, DAZZLINGLEAM
 	db 0 ; no more level-up moves
 
 FlaaffyEvosAttacks:
@@ -511,6 +518,7 @@ FlaaffyEvosAttacks:
 	dbw 27, COTTON_SPORE
 	dbw 36, LIGHT_SCREEN
 	dbw 45, THUNDER
+	dbw 47, DAZZLINGLEAM
 	db 0 ; no more level-up moves
 
 AmpharosEvosAttacks:
@@ -524,7 +532,8 @@ AmpharosEvosAttacks:
 	dbw 27, COTTON_SPORE
 	dbw 30, THUNDERPUNCH
 	dbw 42, LIGHT_SCREEN
-	dbw 57, THUNDER
+	dbw 51, THUNDER
+	dbw 53, DAZZLINGLEAM
 	db 0 ; no more level-up moves
 
 BellossomEvosAttacks:
@@ -533,6 +542,7 @@ BellossomEvosAttacks:
 	dbw 1, SWEET_SCENT
 	dbw 1, STUN_SPORE
 	dbw 1, PETAL_DANCE
+	dbw 1, MOONBLAST
 	dbw 55, SOLARBEAM
 	db 0 ; no more level-up moves
 
@@ -545,6 +555,7 @@ MarillEvosAttacks:
 	dbw 10, WATER_GUN
 	dbw 15, ROLLOUT
 	dbw 21, BUBBLEBEAM
+	dbw 24, PLAY_ROUGH
 	dbw 28, DOUBLE_EDGE
 	dbw 36, RAIN_DANCE
 	db 0 ; no more level-up moves
@@ -560,6 +571,7 @@ AzumarillEvosAttacks:
 	dbw 10, WATER_GUN
 	dbw 15, ROLLOUT
 	dbw 25, BUBBLEBEAM
+	dbw 29, PLAY_ROUGH
 	dbw 36, DOUBLE_EDGE
 	dbw 48, RAIN_DANCE
 	db 0 ; no more level-up moves
@@ -591,6 +603,7 @@ HoppipEvosAttacks:
 	dbw 1, SPLASH
 	dbw 5, SYNTHESIS
 	dbw 5, TAIL_WHIP
+	dbw 8, FAIRY_WIND
 	dbw 10, TACKLE
 	dbw 13, POISONPOWDER
 	dbw 15, STUN_SPORE
@@ -609,6 +622,7 @@ SkiploomEvosAttacks:
 	dbw 1, TACKLE
 	dbw 5, SYNTHESIS
 	dbw 5, TAIL_WHIP
+	dbw 8, FAIRY_WIND
 	dbw 10, TACKLE
 	dbw 13, POISONPOWDER
 	dbw 15, STUN_SPORE
@@ -626,6 +640,7 @@ JumpluffEvosAttacks:
 	dbw 1, TACKLE
 	dbw 5, SYNTHESIS
 	dbw 5, TAIL_WHIP
+	dbw 8, FAIRY_WIND
 	dbw 10, TACKLE
 	dbw 13, POISONPOWDER
 	dbw 15, STUN_SPORE
@@ -875,6 +890,7 @@ SnubbullEvosAttacks:
 	dbw 19, LICK
 	dbw 26, ROAR
 	dbw 34, RAGE
+	dbw 37, PLAY_ROUGH
 	dbw 43, TAKE_DOWN
 	db 0 ; no more level-up moves
 
@@ -888,6 +904,7 @@ GranbullEvosAttacks:
 	dbw 19, LICK
 	dbw 28, ROAR
 	dbw 38, RAGE
+	dbw 43, PLAY_ROUGH
 	dbw 51, TAKE_DOWN
 	db 0 ; no more level-up moves
 
@@ -966,6 +983,7 @@ TeddiursaEvosAttacks:
 	dbw 15, FURY_SWIPES
 	dbw 22, FAINT_ATTACK
 	dbw 29, REST
+	dbw 33, PLAY_ROUGH
 	dbw 36, SLASH
 	dbw 43, SNORE
 	dbw 50, THRASH
@@ -981,6 +999,7 @@ UrsaringEvosAttacks:
 	dbw 15, FURY_SWIPES
 	dbw 22, FAINT_ATTACK
 	dbw 29, REST
+	dbw 33, PLAY_ROUGH
 	dbw 39, SLASH
 	dbw 49, SNORE
 	dbw 59, THRASH
@@ -1291,6 +1310,7 @@ MiltankEvosAttacks:
 BlisseyEvosAttacks:
 	db 0 ; no more evolutions
 	dbw 1, POUND
+	dbw 1, FAIRY_WIND
 	dbw 4, GROWL
 	dbw 7, TAIL_WHIP
 	dbw 10, SOFTBOILED
@@ -1512,12 +1532,13 @@ MagmortarEvosAttacks:
 	dbw 57, FIRE_BLAST
 	db 0 ; no more level-up moves
 
-TogekissEvosAttacks:
+TogekissEvosAttacks: ; RAVETODO
 	db 0 ; no more evolutions
 	dbw 1, GROWL
 	dbw 1, CHARM
-	dbw 7, METRONOME
-	dbw 18, SWEET_KISS
+	dbw 5, METRONOME
+	dbw 9, SWEET_KISS
+	dbw 14, FAIRY_WIND
 	dbw 25, ENCORE
 	dbw 31, SAFEGUARD
 	dbw 38, DOUBLE_EDGE
@@ -1595,13 +1616,14 @@ SylveonEvosAttacks: ;RAVETODO
 	db 0 ; no more evolutions
 	dbw 1, TACKLE
 	dbw 1, TAIL_WHIP
+	dbw 1, FAIRY_WIND
 	dbw 8, SAND_ATTACK
-	dbw 16, CONFUSION
+	dbw 16, SWIFT
 	dbw 23, QUICK_ATTACK
-	dbw 30, SWIFT
+	dbw 30, DRAININGKISS
 	dbw 36, PSYBEAM
 	dbw 42, PSYCH_UP
-	dbw 47, PSYCHIC_M
+	dbw 47, MOONBLAST
 	dbw 52, MORNING_SUN
 	db 0 ; no more level-up moves
 

@@ -607,6 +607,7 @@ ClefairyEvosAttacks:
 	db 0 ; no more evolutions
 	dbw 1, POUND
 	dbw 1, GROWL
+	dbw 1, FAIRY_WIND
 	dbw 4, ENCORE
 	dbw 8, SING
 	dbw 13, DOUBLESLAP
@@ -614,7 +615,8 @@ ClefairyEvosAttacks:
 	dbw 26, DEFENSE_CURL
 	dbw 34, METRONOME
 	dbw 43, MOONLIGHT
-	dbw 53, LIGHT_SCREEN
+	dbw 48, LIGHT_SCREEN
+	dbw 53, MOONBLAST
 	db 0 ; no more level-up moves
 
 ClefableEvosAttacks:
@@ -623,6 +625,8 @@ ClefableEvosAttacks:
 	dbw 1, DOUBLESLAP
 	dbw 1, METRONOME
 	dbw 1, MOONLIGHT
+	dbw 1, FAIRY_WIND
+	dbw 1, MOONBLAST
 	db 0 ; no more level-up moves
 
 VulpixEvosAttacks:
@@ -651,6 +655,7 @@ JigglypuffEvosAttacks:
 	dbww EVOLVE_ITEM, MOON_STONE, WIGGLYTUFF
 	db 0 ; no more evolutions
 	dbw 1, SING
+	dbw 1, FAIRY_WIND
 	dbw 4, DEFENSE_CURL
 	dbw 9, POUND
 	dbw 14, DISABLE
@@ -667,6 +672,8 @@ WigglytuffEvosAttacks:
 	dbw 1, DISABLE
 	dbw 1, DEFENSE_CURL
 	dbw 1, DOUBLESLAP
+	dbw 1, FAIRY_WIND
+	dbw 5, PLAY_ROUGH
 	db 0 ; no more level-up moves
 
 ZubatEvosAttacks:
@@ -706,6 +713,7 @@ OddishEvosAttacks:
 	dbw 23, ACID
 	dbw 32, MOONLIGHT
 	dbw 39, PETAL_DANCE
+	dbw 43, MOONBLAST
 	db 0 ; no more level-up moves
 
 GloomEvosAttacks:
@@ -722,6 +730,7 @@ GloomEvosAttacks:
 	dbw 24, ACID
 	dbw 35, MOONLIGHT
 	dbw 44, PETAL_DANCE
+	dbw 48, MOONBLAST
 	db 0 ; no more level-up moves
 
 VileplumeEvosAttacks:
@@ -730,6 +739,7 @@ VileplumeEvosAttacks:
 	dbw 1, SWEET_SCENT
 	dbw 1, STUN_SPORE
 	dbw 1, PETAL_DANCE
+	dbw 1, MOONBLAST
 	db 0 ; no more level-up moves
 
 ParasEvosAttacks:
@@ -830,6 +840,7 @@ MeowthEvosAttacks:
 	dbw 28, FAINT_ATTACK
 	dbw 35, SCREECH
 	dbw 41, FURY_SWIPES
+	dbw 44, PLAY_ROUGH
 	dbw 46, SLASH
 	db 0 ; no more level-up moves
 
@@ -843,6 +854,7 @@ PersianEvosAttacks:
 	dbw 29, FAINT_ATTACK
 	dbw 38, SCREECH
 	dbw 46, FURY_SWIPES
+	dbw 50, PLAY_ROUGH
 	dbw 53, SLASH
 	db 0 ; no more level-up moves
 
@@ -916,6 +928,7 @@ GrowlitheEvosAttacks:
 	dbw 26, TAKE_DOWN
 	dbw 34, FLAME_WHEEL
 	dbw 42, AGILITY
+	dbw 48, PLAY_ROUGH
 	dbw 50, FLAMETHROWER
 	db 0 ; no more level-up moves
 
@@ -925,6 +938,7 @@ ArcanineEvosAttacks:
 	dbw 1, LEER
 	dbw 1, TAKE_DOWN
 	dbw 1, FLAME_WHEEL
+	dbw 1, PLAY_ROUGH
 	dbw 50, EXTREMESPEED
 	db 0 ; no more level-up moves
 
@@ -1673,6 +1687,7 @@ ChanseyEvosAttacks:
 	dbbw EVOLVE_HAPPINESS, TR_ANYTIME, BLISSEY
 	db 0 ; no more evolutions
 	dbw 1, POUND
+	dbw 1, FAIRY_WIND
 	dbw 5, GROWL
 	dbw 9, TAIL_WHIP
 	dbw 13, SOFTBOILED
@@ -1830,6 +1845,7 @@ JynxEvosAttacks:
 	dbw 1, POWDER_SNOW
 	dbw 9, LOVELY_KISS
 	dbw 13, POWDER_SNOW
+	dbw 17, DRAININGKISS
 	dbw 21, DOUBLESLAP
 	dbw 25, ICE_PUNCH
 	dbw 35, MEAN_LOOK

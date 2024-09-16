@@ -191,6 +191,7 @@ PichuEggMoves:
 	dw PRESENT
 	dw ENCORE
 	dw DOUBLESLAP
+	dw FAIRY_WIND
 	dw -1 ; end
 
 CleffaEggMoves:
@@ -435,6 +436,7 @@ PhanpyEggMoves:
 	dw BODY_SLAM
 	dw ANCIENTPOWER
 	dw WATER_GUN
+	dw PLAY_ROUGH
 	dw -1 ; end
 
 StantlerEggMoves:

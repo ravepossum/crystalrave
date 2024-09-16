@@ -258,6 +258,11 @@ DEF GEN1_MOVES EQU const_value - 1
 	const ROCK_SMASH   ; f9
 	const WHIRLPOOL    ; fa
 	const BEAT_UP      ; fb
+	const PLAY_ROUGH   ; fc RAVETODO add TM
+	const FAIRY_WIND   ; fd 
+	const DRAININGKISS ; fe RAVETODO add TM
+	const DAZZLINGLEAM ; ff RAVETODO add TM
+	const MOONBLAST    ; 100
 DEF GEN2_MOVES EQU const_value - 1
 
 DEF NUM_ATTACKS EQU const_value - 1

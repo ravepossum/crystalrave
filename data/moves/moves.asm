@@ -281,6 +281,11 @@ MovesGen2:
 	move EFFECT_DEFENSE_DOWN_HIT,   20, FIGHTING,      100, 15,  50, PHYSICAL       ;ROCK_SMASH
 	move EFFECT_TRAP_TARGET,        15, WATER,          70, 15,   0, SPECIAL        ;WHIRLPOOL
 	move EFFECT_BEAT_UP,            10, DARK,          100, 10,   0, PHYSICAL       ;BEAT_UP
+	move EFFECT_ATTACK_DOWN_HIT,    90, FAIRY,          90, 10,  10, PHYSICAL       ;PLAY_ROUGH
+	move EFFECT_NORMAL_HIT,         40, FAIRY,         100, 30,   0, SPECIAL        ;FAIRY_WIND
+	move EFFECT_LEECH_HIT,          50, FAIRY,         100, 10,   0, SPECIAL        ;DRAININGKISS
+	move EFFECT_NORMAL_HIT,         80, FAIRY,         100, 10,   0, SPECIAL        ;DAZZLINGLEAM
+	move EFFECT_SP_ATK_DOWN_HIT,    95, FAIRY,         100, 15,  30, SPECIAL        ;MOONBLAST
 .IndirectEnd::
 
 POPS

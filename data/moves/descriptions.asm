@@ -260,6 +260,11 @@ MoveDescriptionsGen2:
 	dw RockSmashDescription
 	dw WhirlpoolDescription
 	dw BeatUpDescription
+	dw PlayRoughDescription
+	dw FairyWindDescription
+	dw DrainingKissDescription
+	dw DazzlingleamDescription
+	dw MoonblastDescription
 .IndirectEnd::
 
 InvalidMoveDescription:
@@ -1268,3 +1273,23 @@ WhirlpoolDescription:
 BeatUpDescription:
 	db   "Party #MON join"
 	next "in the attack.@"
+
+PlayRoughDescription:
+	db   "An attack that may"
+	next "lower ATTACK.@"
+
+FairyWindDescription:
+	db   "A mystical gust"
+	next "of wind.@"
+
+DrainingKissDescription:
+	db   "Steals 1/2 of the"
+	next "damage inflicted.@"
+
+DazzlingleamDescription:
+	db   "Attacks with a"
+	next "magical light.@"
+
+MoonblastDescription:
+	db   "An attack that may"
+	next "lower SPCL.ATK.@"
