@@ -218,6 +218,10 @@ DEF BATTLEANIM_BASE_TILE EQU 7 * 7  ; Maximum size of a pokemon picture
 	const BATTLE_ANIM_OBJ_PLAYERHEAD_1ROW     ; b9
 	const BATTLE_ANIM_OBJ_ENEMYFEET_2ROW      ; ba
 	const BATTLE_ANIM_OBJ_PLAYERHEAD_2ROW     ; bb
+	const BATTLE_ANIM_OBJ_HEART_BURST         ; bc
+	const BATTLE_ANIM_OBJ_STAR_BURST          ; bd
+	const BATTLE_ANIM_OBJ_DAZZLE              ; be
+	const BATTLE_ANIM_OBJ_RISING_MOON         ; bf
 DEF NUM_BATTLE_ANIM_OBJS EQU const_value
 
 ; DoBattleAnimFrame arguments (see engine/battle_anims/functions.asm)
@@ -491,6 +495,7 @@ DEF NUM_BATTLE_ANIM_FUNCS EQU const_value
 	const BATTLE_ANIM_FRAMESET_PLAYERHEAD_1ROW       ; b6
 	const BATTLE_ANIM_FRAMESET_ENEMYFEET_2ROW        ; b7
 	const BATTLE_ANIM_FRAMESET_PLAYERHEAD_2ROW       ; b8
+	const BATTLE_ANIM_FRAMESET_BIG_ROCK_STAR_HEART   ; b9
 DEF NUM_BATTLE_ANIM_FRAMESETS EQU const_value
 
 ; BattleAnimOAMData indexes (see data/battle_anims/oam.asm)
@@ -817,6 +822,10 @@ DEF NUM_BATTLE_BG_EFFECTS EQU const_value - 1
 	const BATTLE_ANIM_GFX_AEROBLAST  ; 27
 	const BATTLE_ANIM_GFX_PLAYERHEAD ; 28
 	const BATTLE_ANIM_GFX_ENEMYFEET   ; 29
+	const BATTLE_ANIM_GFX_HEARTS     ; 2a
+	const BATTLE_ANIM_GFX_STARS      ; 2b
+	const BATTLE_ANIM_GFX_HIT_2      ; 2c
+	const BATTLE_ANIM_GFX_MOON       ; 2d
 DEF NUM_BATTLE_ANIM_GFX EQU const_value - 1
 
 ; battle_bg_effect struct members (see macros/ram.asm)
@@ -862,16 +871,19 @@ DEF NUM_BG_EFFECTS EQU 5 ; see wActiveBGEffects
 ; custom bg/obj palettes (see gfx/battle_anims/custom.pal)
 ; the first 6 matches PAL_BATTLE_OB_GRAY/YELLOW/...
 	const_def
-	const PAL_BTLCUSTOM_GRAY     ; 0
-	const PAL_BTLCUSTOM_YELLOW   ; 1
-	const PAL_BTLCUSTOM_RED      ; 2
-	const PAL_BTLCUSTOM_GREEN    ; 3
-	const PAL_BTLCUSTOM_BLUE     ; 4
-	const PAL_BTLCUSTOM_BROWN    ; 5
-	const PAL_BTLCUSTOM_METALLIC ; 6
-	const PAL_BTLCUSTOM_PURPLE   ; 7
-	const PAL_BTLCUSTOM_ICE      ; 8
-	const PAL_BTLCUSTOM_FIRE     ; 9
+	const PAL_BTLCUSTOM_GRAY             ; 0
+	const PAL_BTLCUSTOM_YELLOW           ; 1
+	const PAL_BTLCUSTOM_RED              ; 2
+	const PAL_BTLCUSTOM_GREEN            ; 3
+	const PAL_BTLCUSTOM_BLUE             ; 4
+	const PAL_BTLCUSTOM_BROWN            ; 5
+	const PAL_BTLCUSTOM_METALLIC         ; 6
+	const PAL_BTLCUSTOM_PURPLE           ; 7
+	const PAL_BTLCUSTOM_ICE              ; 8
+	const PAL_BTLCUSTOM_FIRE             ; 9
+	const PAL_BTLCUSTOM_PINK             ; a
+	const PAL_BTLCUSTOM_VERY_BRIGHT_PINK ; b
+	const PAL_BTLCUSTOM_AURORA           ; c
 DEF NUM_CUSTOM_BATTLE_PALETTES EQU const_value
 
 DEF PAL_BTLCUSTOM_DEFAULT EQU -1

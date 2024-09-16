@@ -186,6 +186,7 @@ BattleAnimFrameData:
 	dw .Frameset_PlayerHead1Row      ; BATTLE_ANIM_FRAMESET_PLAYERHEAD_1ROW
 	dw .Frameset_EnemyFeet2Row       ; BATTLE_ANIM_FRAMESET_ENEMYFEET_2ROW
 	dw .Frameset_PlayerHead2Row      ; BATTLE_ANIM_FRAMESET_PLAYERHEAD_2ROW
+	dw .Frameset_BigRockStarHeart    ; BATTLE_ANIM_FRAMESET_BIG_ROCK_STAR_HEART
 	assert_table_length NUM_BATTLE_ANIM_FRAMESETS
 
 .Frameset_HitBig:
@@ -1268,3 +1269,25 @@ BattleAnimFrameData:
 .Frameset_PlayerHead2Row:
 	battleoamframe BATTLE_ANIM_OAMSET_D7,  8
 	battleoamend
+
+.Frameset_BigRockStarHeart:
+	battleoamframe BATTLE_ANIM_OAMSET_1B,  8
+	battleoamend
+
+.Frameset_SparkleLong:
+	battleoamframe BATTLE_ANIM_OAMSET_14,  3
+	battleoamframe BATTLE_ANIM_OAMSET_15,  3
+	battleoamrestart
+
+.Frameset_TinyGlow:
+	battleoamframe BATTLE_ANIM_OAMSET_54,  1
+	battleoamframe BATTLE_ANIM_OAMSET_55,  1
+	battleoamrestart
+
+.Frameset_PulsingSparkle:
+	battleoamframe BATTLE_ANIM_OAMSET_14,  1
+	battleoamframe BATTLE_ANIM_OAMSET_15,  1
+	battleoamframe BATTLE_ANIM_OAMSET_74,  1
+	battleoamframe BATTLE_ANIM_OAMSET_15,  1
+	battleoamframe BATTLE_ANIM_OAMSET_14,  1
+	battleoamdelete
