@@ -4,7 +4,7 @@
 	evs  0,   0,   0,   0,   2,   1
 	;   hp  atk  def  spd  sat  sdf
 
-	db NORMAL, FLYING ; type ;RAVETODO
+	db FAIRY, FLYING ; type ;RAVETODO
 	db 30 ; catch rate
 	db 159 ; base exp
 	dw NO_ITEM, NO_ITEM ; items

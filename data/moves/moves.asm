@@ -215,7 +215,7 @@ MovesGen2:
 	move EFFECT_PRIORITY_HIT,       40, FIGHTING,      100, 30,   0, PHYSICAL       ;MACH_PUNCH
 	move EFFECT_SPEED_DOWN_2,        0, NORMAL,         90, 10,   0, STATUS         ;SCARY_FACE
 	move EFFECT_ALWAYS_HIT,         60, DARK,          100, 20,   0, PHYSICAL       ;FAINT_ATTACK
-	move EFFECT_CONFUSE,             0, NORMAL,         75, 10,   0, STATUS         ;SWEET_KISS
+	move EFFECT_CONFUSE,             0, FAIRY,          75, 10,   0, STATUS         ;SWEET_KISS
 	move EFFECT_BELLY_DRUM,          0, NORMAL,        100, 10,   0, STATUS         ;BELLY_DRUM
 	move EFFECT_POISON_HIT,         90, POISON,        100, 10,  30, SPECIAL        ;SLUDGE_BOMB
 	move EFFECT_ACCURACY_DOWN_HIT,  20, GROUND,        100, 10, 100, SPECIAL        ;MUD_SLAP
@@ -233,7 +233,7 @@ MovesGen2:
 	move EFFECT_SANDSTORM,           0, ROCK,          100, 10,   0, STATUS         ;SANDSTORM
 	move EFFECT_LEECH_HIT,          60, GRASS,         100,  5,   0, SPECIAL        ;GIGA_DRAIN
 	move EFFECT_ENDURE,              0, NORMAL,        100, 10,   0, STATUS         ;ENDURE
-	move EFFECT_ATTACK_DOWN_2,       0, NORMAL,        100, 20,   0, STATUS         ;CHARM
+	move EFFECT_ATTACK_DOWN_2,       0, FAIRY,         100, 20,   0, STATUS         ;CHARM
 	move EFFECT_ROLLOUT,            30, ROCK,           90, 20,   0, PHYSICAL       ;ROLLOUT
 	move EFFECT_FALSE_SWIPE,        40, NORMAL,        100, 40,   0, PHYSICAL       ;FALSE_SWIPE
 	move EFFECT_SWAGGER,             0, NORMAL,         90, 15, 100, STATUS         ;SWAGGER
@@ -265,7 +265,7 @@ MovesGen2:
 	move EFFECT_ALWAYS_HIT,         70, FIGHTING,      100, 10,   0, PHYSICAL       ;VITAL_THROW
 	move EFFECT_MORNING_SUN,         0, NORMAL,        100,  5,   0, STATUS         ;MORNING_SUN
 	move EFFECT_SYNTHESIS,           0, GRASS,         100,  5,   0, STATUS         ;SYNTHESIS
-	move EFFECT_MOONLIGHT,           0, NORMAL,        100,  5,   0, STATUS         ;MOONLIGHT
+	move EFFECT_MOONLIGHT,           0, FAIRY,         100,  5,   0, STATUS         ;MOONLIGHT
 	move EFFECT_HIDDEN_POWER,        1, NORMAL,        100, 15,   0, SPECIAL        ;HIDDEN_POWER
 	move EFFECT_NORMAL_HIT,        100, FIGHTING,       80,  5,   0, PHYSICAL       ;CROSS_CHOP
 	move EFFECT_TWISTER,            40, DRAGON,        100, 20,  20, SPECIAL        ;TWISTER
