@@ -13,6 +13,7 @@ Icon & Footprint sprites for all new mons from Polished Crystal (hoping to get m
 # Features I've implemented (mostly just for my reference)
 
 - Physical/Special Split
+- Fairy Type
 - Gen 6 Exp. Share
 - Remove OW poison damage
 - Catch experience
